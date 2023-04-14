@@ -62,8 +62,8 @@ body {
 
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .visually-hidden {
@@ -126,25 +126,11 @@ body {
     border-bottom: 1px solid #E7E9FC;
 } 
 
-.header .container {
+.header-box .nav-box {
     min-height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-}
-
-.header-box {
-    box-sizing: border-box;
     background: #FFFFFF;
-    display: block;
-    justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-.nav-box {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .nav-box-list {
@@ -152,7 +138,7 @@ body {
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    
+
 }
 
 .nav-box-list:nth-child(-n + 2) {
@@ -200,27 +186,15 @@ body {
 }
 
 .address-box {
-    display: block;
+    display: flex;
 }
 
 .address-box-list {
-    display: block;
+    display: flex;
     gap: 40px;
 }
 
 /* Mobile menu */
-
-.menu-button {
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-}
-
-.menu-button .icon-close {
-    display: none;
-}
 
 /* Hero section */
 
@@ -251,16 +225,17 @@ body {
 
 .hero-heading-box {
     max-width: 320px;
-    margin: 0 ;
+    margin: 0 auto;
 }
 
 .hero-heading {
     font-style: normal;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
     color: var(--second-text-color);
 }
 
@@ -292,7 +267,7 @@ body {
     gap: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    margin: 48px auto;
+    margin: 72px auto;
     border: none;
 } 
 
@@ -313,10 +288,10 @@ body {
 }
 
 .modal {
-    width: 408px;
-    height: 576px;
+    width: 392px;
+    height: 586px;
     position: absolute;
-    top: 50%;
+    top: 83%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     background: var(--modal-background);
@@ -617,7 +592,7 @@ body {
 
 /* Our team */
 
-/* .team-section {
+.team-section {
     background-color: #F4F4FD;
 }
 
@@ -707,7 +682,7 @@ body {
 .team-position {
     padding-top: 32px;
     padding-bottom: 32px;
-} */
+} 
 
 /* Клієнти */
 
