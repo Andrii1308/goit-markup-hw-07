@@ -53,11 +53,14 @@ body {
 }
 
 .container {
+    display: block;
     max-width: 428px;
     padding-left: 16px;
     padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* align-items: center; */
 }
 
 
@@ -378,8 +381,19 @@ body {
     url('../images/hero-image-mobile.jpg');
     background-color: #2E2F42;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 428px 432px;
     background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-section {
+        background-image: linear-gradient(to right,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/hero-image-mobile@2x.jpg');
+    }
 }
 
 .hero-container {
@@ -687,16 +701,14 @@ body {
 /* Features */
 
 .features-box {
-    display: block;
+    /* display: flex; */
     background-color: #fff;
 }
 
 .features-list-box {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 72px;
+    flex-wrap: wrap;
+    gap: 72px 24px;
 }
 
 .features-list-item {
@@ -742,7 +754,7 @@ body {
 }
 
 .products-list-box {
-    display: block;
+    display: flex;
     align-items: center;
     gap: 24px;
 }
@@ -919,7 +931,7 @@ body {
 
 .footer-box {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 72px;
